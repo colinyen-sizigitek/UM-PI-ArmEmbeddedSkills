@@ -1,0 +1,5 @@
+# basestation-viewer (Windows / desktop, Python 3.11+)
+# pip install -r requirements.txt   (preferably inside a virtual environment)
+websockets>=13.0
+opencv-python>=4.8
+numpy>=1.24
