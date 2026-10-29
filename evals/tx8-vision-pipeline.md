@@ -1,4 +1,4 @@
-# Evals: tx8-vision-pipeline
+# Evals: um-pi-vision-pipeline
 
 ## P1 — Pipeline skeleton
 Prompt: "幫我在 TX8 上建立相機到 MX3 的推論 pipeline，相機有兩路 MJPEG。"

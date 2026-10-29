@@ -17,7 +17,7 @@
 
 .EXAMPLE
   powershell -NoProfile -File scripts\validate.ps1
-  powershell -NoProfile -File scripts\validate.ps1 -Skill tx8-platform
+  powershell -NoProfile -File scripts\validate.ps1 -Skill um-pi-platform
 #>
 [CmdletBinding()]
 param(

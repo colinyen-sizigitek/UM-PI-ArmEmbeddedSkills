@@ -1,4 +1,4 @@
-# Evals: tx8-cpp-performance
+# Evals: um-pi-cpp-performance
 
 ## P1 — NEON threshold
 Prompt: "這段 YOLO 輸出過濾在 TX8 上太慢，幫我用 NEON 改寫：for (i...) if (score[i] > th) out[n++] = i;"

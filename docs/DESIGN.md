@@ -103,7 +103,7 @@ Skills are internal-only (license: `Proprietary - internal use only`).
   `mx_nc -v --autocrop -m model.onnx`.
 
 ### 2.4 MX3 frequency reference matrix (MemryX reference table, NOT measured on TX8)
-File: `skills/mx3-model-selection/references/tx8-freq-matrix.csv` (generated from the
+File: `skills/um-pi-mx3-model-selection/references/tx8-freq-matrix.csv` (generated from the
 product owner's `model_inference_results_by_frequency.xlsx`). 579 models x {300,400,450,500} MHz,
 config 4x1 (4 chips). PASS counts: 300→569, 400→562, 450→533, 500→424. Columns: model, freq_mhz,
 status, fps, cpu, power_mw, voltage_mv, temp_c, note. The CPU column unit is unspecified.
@@ -273,8 +273,8 @@ ArmEmbeddedSkills/
   evals/README.md + evals/*.md   # eval prompts + expected key points (grouped by skill area)
 ```
 
-Skills (8): `tx8-platform`, `tx8-cpp-performance`, `tx8-vision-pipeline`, `mx3-model-selection`,
-`mx3-model-compile`, `mx3-runtime-integration`, `basestation-viewer`, `tx8-code-review`.
+Skills (8): `um-pi-platform`, `um-pi-cpp-performance`, `um-pi-vision-pipeline`, `um-pi-mx3-model-selection`,
+`um-pi-mx3-model-compile`, `um-pi-mx3-runtime-integration`, `um-pi-basestation-viewer`, `um-pi-code-review`.
 
 ---
 
@@ -305,7 +305,7 @@ Skills (8): `tx8-platform`, `tx8-cpp-performance`, `tx8-vision-pipeline`, `mx3-m
 - Scripts: POSIX `bash` (board side, `set -euo pipefail`), Python 3.10+ (stdlib unless stated),
   PowerShell 5.1 compatible for Windows host. Each script has a `--help`/usage header. Scripts never
   install system packages or change system settings without an explicit flag and a printed warning.
-- Cross-skill references: name the sibling skill (e.g. "see skill `mx3-runtime-integration`"),
+- Cross-skill references: name the sibling skill (e.g. "see skill `um-pi-mx3-runtime-integration`"),
   don't link into another skill's folder.
 - Commands that touch the board are written as `ssh umpi '<cmd>'` or "on the board:" blocks.
 - Never invent API signatures: when unsure, instruct to check the installed header

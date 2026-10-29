@@ -3,8 +3,8 @@
 <!-- tx8-skills:begin — managed by ArmEmbeddedSkills/install; edit the source in shared/AGENTS.tx8.md -->
 
 These rules apply to every task in this repository. Detailed procedures live in the TX8 skills
-(`tx8-platform`, `tx8-cpp-performance`, `tx8-vision-pipeline`, `mx3-model-selection`,
-`mx3-model-compile`, `mx3-runtime-integration`, `basestation-viewer`, `tx8-code-review`).
+(`um-pi-platform`, `um-pi-cpp-performance`, `um-pi-vision-pipeline`, `um-pi-mx3-model-selection`,
+`um-pi-mx3-model-compile`, `um-pi-mx3-runtime-integration`, `um-pi-basestation-viewer`, `um-pi-code-review`).
 Load the matching skill before doing non-trivial work in its area.
 
 ## Platform (UM-PI drone AI platform)
@@ -28,7 +28,7 @@ Load the matching skill before doing non-trivial work in its area.
 4. **Targets:** 30 fps sustained 10 min; TX8-internal latency (capture → metadata sent) p99 ≤ 80 ms;
    inference start (command → first metadata) ≤ 3 s. CPU, temperature, power: monitor and report.
 5. **MX3 clock ≤ 400 MHz.** Choose the lowest PASS frequency from
-   `mx3-model-selection/references/tx8-freq-matrix.csv` whose fps ≥ target × 1.5. Never use
+   `um-pi-mx3-model-selection/references/tx8-freq-matrix.csv` whose fps ≥ target × 1.5. Never use
    MemryX's ARM default (500 MHz). Untested model/chip-count → run the stability test first.
 6. **MX3 is active only while inference is on.** Stop → release the accelerator object and stop
    camera channel 2. Channel 1 (1080p MJPEG) keeps streaming to the base station untouched.

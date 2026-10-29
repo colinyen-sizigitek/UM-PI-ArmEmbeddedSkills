@@ -31,7 +31,7 @@
 .PARAMETER ProjectPath
   Target project directory for project scope (default: current directory). Must exist.
 .PARAMETER Skills
-  Optional subset of skill names, e.g. -Skills tx8-platform,mx3-model-compile
+  Optional subset of skill names, e.g. -Skills um-pi-platform,um-pi-mx3-model-compile
 .PARAMETER DryRun
   Print what would be done; write nothing.
 .PARAMETER Force
